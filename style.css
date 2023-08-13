@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.box{
+    width: 350px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25px;
+}
+.image{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.image svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: 0.3s;
+    opacity: 0;
+}
+.image .filter{
+    background-color: hsl(178deg 100% 50% / 50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.3s;
+    opacity: 0;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.image:hover svg, .image:hover .filter{
+    opacity: 100%;
+    cursor: pointer;
+}
+h2{
+    font-weight: 600;
+    font-size: 22px;
+}
+.discription{
+    color: hsl(216,25%,64%);
+    font-weight: 300;
+    font-size: 18px;
+}
+.element{
+    display: flex;
+    justify-content: space-between;
+}
+.element svg{
+    margin-right: 5px;
+}
+.element .e1{
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+.element .e2{
+    display: flex;
+    align-items: center;
+    color: hsl(216,25%,64%);
+}
+.box .line{
+    border-color: hsl(215, 51%, 70%);
+    border-bottom: 0.5px solid hsl(214.29deg 30.88% 26.67%);
+}
+.box .account{
+    display: flex;
+    align-items: center;
+}
+.box .account img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-right: 20px;
+}
+.box .account p{
+    color: hsl(215, 51%, 70%);
+}
+.box .account p span{
+    transition: 0.3s;
+}
+.box .account p span:hover{
+    color: hsl(178deg 100% 50%);
+    cursor: pointer;
+}
